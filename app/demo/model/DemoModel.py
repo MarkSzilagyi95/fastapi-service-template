@@ -1,5 +1,5 @@
-from utils.connectors.SqlServer import SqlServer
-from utils.helpers.ConfigReader import Config
+from app.utils.connectors.SqlServer import SqlServer
+from app.utils.helpers.ConfigReader import Config
 
 
 @SqlServer(hostname=Config('mssql.host').get(), username=Config('mssql.user').get(),

@@ -5,7 +5,7 @@ from fastapi import HTTPException, status
 from fastapi.security import HTTPBasic
 from keycloak import KeycloakOpenID
 
-from utils.helpers.ConfigReader import Config
+from app.utils.helpers.ConfigReader import Config
 
 security = HTTPBasic()
 

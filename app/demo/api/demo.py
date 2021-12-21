@@ -6,8 +6,8 @@ from app.demo.dto.DemoDto import DemoDto
 from app.demo.dto.DemoNotFoundDto import DemoNotFoundDto
 from app.demo.dto.DemoPayloadDto import DemoPayloadDto
 from app.demo.service.DemoService import DemoService
-from utils.auth.Authentication import Authentication
-from utils.helpers.ConfigReader import Config
+from app.utils.auth.Authentication import Authentication
+from app.utils.helpers.ConfigReader import Config
 
 demo = APIRouter()
 

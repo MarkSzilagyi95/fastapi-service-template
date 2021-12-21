@@ -15,7 +15,7 @@ def threaded(f, daemon=False):
 
         q = queue.Queue()
 
-        t = threading.Thread(target=wrapped_f, args=(q,)+args, kwargs=kwargs)
+        t = threading.Thread(target=wrapped_f, args=(q,) + args, kwargs=kwargs)
         t.daemon = daemon
         t.start()
         t.result_queue = q

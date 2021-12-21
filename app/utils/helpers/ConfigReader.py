@@ -4,7 +4,7 @@ import yaml
 
 
 def get_project_root() -> Path:
-    return Path(__file__).parent.parent.parent
+    return Path(__file__).parent.parent.parent.parent
 
 
 class Config:
@@ -20,6 +20,8 @@ class Config:
         tokens = self.config.split(".")
         current_structure = self.yml
         value = None
+        if current_structure is None:
+            raise Exception("application.yml is not configured!")
         for token in tokens:
             if token in current_structure:
                 value = current_structure[token]
